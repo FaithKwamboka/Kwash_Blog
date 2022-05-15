@@ -10,32 +10,31 @@
 
 </div>
 
-<div class="container">
-    <div class="card-columns">
-        {% if blogs %} {% for my_blog in blogs %}
-        <div class="card">
-            <div class="card-body" text-center>
-                <p>Author: {{my_blog.title}}</p>
-                <p>Blog Post: {{my_blog.post}}</p>
-                <p>Date Created: {{my_blog.date_created}}</p>
-    
-    
+<div class="card-columns">
+    {% if blogs %} {% for my_blog in blogs %}
+    <div class="card">
+        <div class="card-body" text-center>
+            <p>Author: {{my_blog.title}}</p>
+            <p>Blog Post: {{my_blog.post}}</p>
+            <p>Date Created: {{my_blog.date_created}}</p>
+
+
+        </div>
+        <div class="card-footer foot_flex d-block mx-auto">
+            <div>
+                
             </div>
-            <div class="card-footer foot_flex d-block mx-auto">
-                <div>
-                    
-                </div>
-                <a href="/comment/{{my_blog.id}}"><i class="fa fa-comment" aria-hidden="true"></i>Comment</button></a>
-                <a href="/like/{{my_blog.id}}"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                        Like &#128525 {{my_blog.up_vote.count()}}</button></a>
-                <h1>{{upvotes}}</h1>
-                <a href="/dislike/{{my_blog.id}}"><i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                        Dislike &#128530 {{my_blog.down_vote.count()}}</button></a>
-                <h4></h4>
-            </div>
+            <a href="/comment/{{my_blog.id}}"><i class="fa fa-comment" aria-hidden="true"></i>Comment</button></a>
+            <a href="/like/{{my_blog.id}}"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    Like &#128525 {{my_blog.up_vote.count()}}</button></a>
+            <h1>{{upvotes}}</h1>
+            <a href="/dislike/{{my_blog.id}}"><i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                    Dislike &#128530 {{my_blog.down_vote.count()}}</button></a>
+            <h4></h4>
         </div>
     </div>
 </div>
+
 
 {% endfor %} {% endif %}
 

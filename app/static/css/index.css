@@ -2,6 +2,7 @@ body{
     background-image: url(../photos/blog_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
 .bgimage{
@@ -24,5 +25,6 @@ form{
     background-image: url(../photos/blog_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 
