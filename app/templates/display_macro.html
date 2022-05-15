@@ -9,8 +9,10 @@
     <div class="card-columns">
         {% if blogs %} {% for my_blog in blogs %}
         <div class="card">
-            <div class="card-body" text-center>
+            <div class="card-header" text-center>
                 <p>Author: {{my_blog.title}}</p>
+            </div>
+            <div class="card-body" text-center>
                 <p>Blog Post: {{my_blog.post}}</p>
                 <p>Date Created: {{my_blog.date_created.strftime('%Y-%m-%d')}}</p>
             </div>
