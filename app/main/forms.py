@@ -23,6 +23,6 @@ class Vote(FlaskForm):
 
 
 class UpdateProfile(FlaskForm):
-    bio = TextAreaField('Bio', validators=[DataRequired()])
+    bio = TextAreaField('Help us know you better', validators=[DataRequired()])
     submit = SubmitField('Post')
 
