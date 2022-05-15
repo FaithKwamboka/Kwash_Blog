@@ -10,14 +10,13 @@ The application also allows users to subscribe and receive notifications about n
 
 ## User Stories
 * As a user, I would like to subscribe  and receive a welcoming email as well as notifications about new blog posts.
-* As a user, I would like to see the blogs other people have posted.
-* As a user, I would like to vote on the blog they liked and give it a downvote or upvote.
-* As a user, I would like to be signed in for me to leave a comment
+* As a user, I would like to see the blogs posted.
+* As a user, I would like or unlike a blog.
+* As a user i would like to leave a comment
 * As a user, I would like to receive a welcoming email once I sign up.
-* As a user, I would like to view the blogs I have created in my profile page.
-* As a user, I would like to comment on the different blogs and leave feedback.
 * As a user, I would like to submit a blog.
-* As a user, I would like to view the different categories. 
+* As a user, I would like to view the blogs I have created in my profile page.
+
 
 ## BDD(Behaviour Driven Development)
 >Login Inputs
@@ -40,7 +39,6 @@ The application also allows users to subscribe and receive notifications about n
 
 | Inputs | Description  |
 |---|---|
-|  Heading | Blog eg; ``Life``  |
 |  Blog text| The actual blog body|
 | Comment| A comment on the Blog|
 
