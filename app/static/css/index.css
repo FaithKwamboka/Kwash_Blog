@@ -1,4 +1,28 @@
 body{
-    background-image: url(../photos/blog_1.jpg);
-    color: black;
+    background-image: url(../photos/blog_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.bgimage{
+    height: 100vh;
+    background-image: url(../photos/blog_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#prof{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+form{
+    font-size: 15px;
+}
+
+#blogs{
+    background-image: url(../photos/blog_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
