@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <a class="navbar-brand" href="/" id="logo">Kwash Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
 
             </li>
         </ul>
-        <ul class="navbar-nav my-2 my-lg-0">
+        <ul class="navbar-nav my-2 my-lg-0 nav navbar-right">
             {% if current_user.is_authenticated %}
             <li class="nav-item">
                 <a class="nav-link login-text" href=" {{url_for('auth.subscriber')}}"></i>&nbsp;Subscribe</a>

@@ -1,23 +1,24 @@
-{% extends 'base.html'%} 
-{% block styles %} {{super()}}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}"> {% endblock %}
-{% block content%}
+{% extends 'base.html'%} {% from 'display_macro.html' import display_pitches%} {% block content%} {% block styles %} {{super()}}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> {% endblock %}
+<title>{{title}}</title>
 
-<body>
-    <div class="bg_image">
+<div class="bgimage" style="background-color:#ADD8E6;">
+    <div class="p-3 p-md-5 mb-5 text-center bg-transparent">
         <div class="p-3 p-md-5 m-md-3 text-center">
-            <div class="col-md-12 p-lg-5 mx-auto my-5">
-                <h2 class="display-4">Kwash Blog</h2><br>
+            <div class="col-md-12 p-lg-1 mx-auto my-5">
+                <h2 class="display-5">Kwash Blog</h2><br>
                 <p class="lead">{{Quote.quote}}</p>
-                <p>Author: <i>{{Quote.author}}</i></p>
+                <p>Author: <i>{{Quote.author}}</i></p><br>
                 <div id="buttons d-block mx-auto">
-                    <a class="btn btn-outline-secondary" href="/new_blog">Write a blog</a>&nbsp;&nbsp;
+                    <a class="btn btn-outline-secondary" href="/new_blog" style="background-color:grey; color:black">Write a blog</a>&nbsp;&nbsp;
     
-                    <a class="btn btn-outline-secondary" href="/blogs">View Blogs</a>
+                    <a class="btn btn-outline-secondary" href="/blogs" style="background-color:grey; color:black">View Blogs</a>
                 </div>
             </div>
         </div>
     </div>
-</body>
+</div>
+
 
 {% endblock %}
+</body>
