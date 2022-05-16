@@ -3,7 +3,7 @@ from app import db
 
 
 def setUp(self):
-        self.user_Briankiiru = User(username = 'kwamboka',password = 'kwamboka22', email = 'faithkwash@gmail.com')
+        self.user_Kwamboka = User(username = 'kwamboka',password = 'kwamboka22', email = 'faithkwash@gmail.com')
         self.new_comment = Comment(blog_id=4950,blog_title='comment for blogs',blog_comment='Awesome Content',user = self.user_kwamboka )
 
 
